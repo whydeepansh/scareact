@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <title>My react example 1</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let heading = React.createElement(
+        "h1",
+        { align: "center", style: { display: "inline" } },
+        "My new found love is React"
+      );
+      let span = React.createElement(
+        "span",
+        { style: { display: "inline" } },
+        "❤️"
+      );
+      ReactDOM.render(
+        React.createElement("div", null, heading, span),
+        document.getElementById("root")
+      );
+      //ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
